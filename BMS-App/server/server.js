@@ -17,6 +17,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 const db = require('./models');
 db.sequelize.sync();
+console.log('Database successfully created');
 
 // simple route
 app.get('/', (req, res) => {
