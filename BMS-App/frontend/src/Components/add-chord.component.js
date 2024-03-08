@@ -1,9 +1,17 @@
 import React from 'react';
 
+function Chord() {
+	return (
+		<div className="base-component">
+			<p>I display a single chord</p>	
+		</div>
+	);
 
-function DisplayChords() {
+}
+
+function ChordsList() {
 	return(
-		<div class="base-component">
+		<div className="base-component">
 			<p>I show all the chords</p>
 		</div>
 	);
@@ -12,12 +20,12 @@ function DisplayChords() {
 
 function CreateChord() {
 	return(
-		<div class="base-component">
+		<div className="base-component">
 			<p>I display chords</p>
 		</div>
 	);
 }
 
 
-export { DisplayChords, CreateChord };
+export { Chord, ChordsList, CreateChord };
 
