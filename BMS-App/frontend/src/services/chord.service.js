@@ -1,32 +1,41 @@
 import http from "../http-common";
 
-class ChordDataService {
-	getAll() {
+
+
+
+const	getAll = () =>  {
 		return http.get("/chords");
-	}
+	};
 
-	get(id) {
+const	get = id => {
 		return http.get(`/chords/${id}`);
-	}
+	};
 
-	create(data) {
+const	create = data => {
 		return http.post("/chords", data);
-	}
+	};
 
 
-	update(id, data) {
+const	update =(id, data)=> {
 		return http.put(`/chords/${id}`, data);
-	}
+	};
 
-	delete(id) {
+const	remove = id => {
 		return http.delete(`/chords/${id}`);
-	}
+	};
 
-	deleteAll() {
+const	removeAll = () => {
 		return http.delete(`/chords`);
-	}
+	};
 
+const ChordDataService =  {
+	getAll,
+	get,
+	create,
+	update,
+	remove,
+	removeAll
 }
 
-export default new ChordDataService();
+export default ChordDataService;
 
