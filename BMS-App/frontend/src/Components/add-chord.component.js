@@ -35,15 +35,21 @@ function ChordsList() {
 
 	return(
 		<div className="base-component">
-		<ul>
+		<ul className="list-group">
 		<p>i swear it's rendering</p>
 		{chords ? (
 			chords.map((item) => (
-				<li key={item.id}>
-					<p> rendered</p>
-					<p>{item.id}</p>
-					<p>{item.note}</p>
-					<p>{item.interval}</p>
+				<li className="list-group-item flex" key={item.id}>
+					<div className="d-flex flex-row">
+						<div className="flex-column">
+							<p>Note:</p>
+							<p>Interval:</p>
+						</div>
+						<div className="px-4 flex-column">
+							<p>{item.note}</p>
+							<p>{item.interval}</p>
+						</div>
+					</div>
 				</li>
 			))
 		): (
