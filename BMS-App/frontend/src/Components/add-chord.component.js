@@ -146,12 +146,13 @@ function CreateChord() {
 					name="interval"
 				/>
 			</div>
-				<button onClick={saveChord} className="btn btn-success">
+				<button onClick={saveChord} className="btn btn-success my-3">
 				Submit
 				</button>
 			</div>
 		)}
-			<p>I display chords</p>
+			<h3 className="py-3">Chords</h3>
+			<ChordsList />
 		</div>
 	);
 }
