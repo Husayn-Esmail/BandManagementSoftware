@@ -36,7 +36,6 @@ function ChordsList() {
 	return(
 		<div className="base-component">
 		<ul className="list-group">
-		<p>i swear it's rendering</p>
 		{chords ? (
 			chords.map((item) => (
 				<li className="list-group-item flex" key={item.id}>
