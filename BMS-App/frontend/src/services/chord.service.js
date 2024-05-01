@@ -12,6 +12,7 @@ const	get = id => {
 	};
 
 const	create = data => {
+		console.log("POSTING");
 		return http.post("/chords", data);
 	};
 
