@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ChordDataService from "../services/chord.service";
 
 
@@ -12,9 +12,46 @@ function Chord() {
 }
 
 function ChordsList() {
+	const [chords, setChords] = useState(null);
+
+	useEffect(() => {
+
+		const getChords = async () => {
+			ChordDataService.getAll()
+			.then(response => {
+				console.log(response.data);
+				setChords(response.data);
+			})
+			.catch(e => {
+				console.log(e)
+			});
+
+
+		};
+		getChords();
+	}, []);
+	console.log(` chors are : ${chords}`);
+
+
 	return(
 		<div className="base-component">
-			<p>I show all the chords</p>
+		<ul>
+		<p>i swear it's rendering</p>
+		{chords ? (
+			chords.map((item) => (
+				<li key={item.id}>
+					<p> rendered</p>
+					<p>{item.id}</p>
+					<p>{item.note}</p>
+					<p>{item.interval}</p>
+				</li>
+			))
+		): (
+
+			<p>waiting</p>
+		)
+		}
+			</ul>
 		</div>
 	);
 
