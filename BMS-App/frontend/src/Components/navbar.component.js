@@ -1,6 +1,7 @@
 import React from "react"; 
 import { Routes, Route, Link } from "react-router-dom";
 import { Chord, ChordsList, CreateChord } from "./add-chord.component";
+import { SongList } from "./song.component";
 
 
 
@@ -32,6 +33,7 @@ export default function NavBar() {
 			<div className="container mt-3">
 				<Routes>
 					<Route path="/" element={<ChordsList/>} />
+					<Route path="/songs" element={<SongList />} />
 					<Route path="/chords" element={<ChordsList/>}/>
 					<Route path="/add" element={<CreateChord/>}/>
 					<Route path="/chords/:id" element={<Chord/>} />
