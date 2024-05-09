@@ -1,1 +1,15 @@
+.item p {
+	margin-bottom: 0;
+}
+
+.list {
+	max-width: 50vw;
+	width: 100%;
+}
+
+.songlist-container {
+	display: flex;
+	flex-direction: column;
+}
+
 

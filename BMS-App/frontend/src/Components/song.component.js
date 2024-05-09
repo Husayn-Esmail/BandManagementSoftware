@@ -22,21 +22,16 @@ function SongList() {
 
 
 	return(
-		<div className="base-component">
-		<ul className="list-group">
-		<li className="list-group-item flex">
-			<div className="d-flex flex-row">
-				<p className="px-4">0</p>
-				<p>SongName</p>
-		{// i need to justify the chords to the end
-
-		}
-				<p>C A G</p>
-			</div>
-		</li>
-
+		<div className="songlist-container">
+		<ul className="list-group list align-self-center">
+			<li className="list-group-item d-flex item">
+					<p className="pe-4">0</p>
+					<p className="flex-grow-1">SongName</p>
+					<p className="pe-5">C A G</p>
+			</li>
 		</ul>
-		<p>I am a list of songs</p>
+
+		<Song />
 		</div>
 
 	);
