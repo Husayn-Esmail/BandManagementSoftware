@@ -2,8 +2,46 @@
 
 function Song() {
 	return(
-		<div className="base-component song">
+		<div className="base-component song border-top border-end border-bottom p-4">
+		<h2>Song Name</h2>
 		<div className="d-flex">
+		<ul className="list-group">
+		<li className="list-group-item">
+			<p>Key</p>
+			<p>A</p>
+		</li>
+		<li className="list-group-item">
+			<p>Chords</p>
+			<p>Cm A G</p>
+		</li>
+		<li>
+			<p>Lead</p>
+			<p>Person</p>
+		</li>
+		<li>
+			<p>Starting</p>
+			<p>Person</p>
+		</li>
+		<li>
+			<p>Ending</p>
+			<p>Person</p>
+		</li>
+	
+		<li>
+			<p>Position</p>
+			<p>0</p>
+		</li>
+		</ul>
+		<p>Notes</p>
+		<p>my notes go here</p>
+
+		<h5>Transpose</h5>
+		<p>value</p>
+		<p>+1</p>
+		<button>+</button>
+		<button>-</button>
+		<button>Edit</button>
+		<button>Delete</button>
 		</div>
 		<p>I am a single song, put a ring on me</p>
 		</div>
@@ -15,7 +53,7 @@ function Song() {
 function showSong() {
 	const s = document.getElementsByClassName("song")[0];
 
-	if (window.getComputedStyle(s, null).display == "none") {
+	if (window.getComputedStyle(s, null).display === "none") {
 		s.style.display = "block"
 	} else {
 		s.style.display = "none"

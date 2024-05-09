@@ -9,7 +9,9 @@
 
 .songlist-container {
 	display: flex;
-	flex-direction: column;
+	justify-content: center;
 }
 
-
+.song {
+	display: block;
+}
