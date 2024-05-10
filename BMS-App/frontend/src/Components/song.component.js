@@ -4,7 +4,8 @@ function Song() {
 	return(
 		<div className="base-component song border-top border-end border-bottom p-4">
 		<h2>Song Name</h2>
-		<div className="d-flex">
+		<div className="d-flex justify-content-start;">
+		<button>x</button>
 		<ul className="list-group">
 		<li className="list-group-item">
 			<p>Key</p>
@@ -71,7 +72,9 @@ function SongList() {
 
 	return(
 		<div className="songlist-container">
-		<ul className="list-group list align-self-center">
+		<h2 className="text-center">List Name</h2>
+		<div className="list-items d-flex justify-content-center">
+		<ul className="list-group list">
 			<li className="list-group-item d-flex item">
 					<p className="pe-4">0</p>
 					<p className="flex-grow-1"><button onClick={showSong}>SongName</button></p>
@@ -85,6 +88,7 @@ function SongList() {
 		</ul>
 
 		<Song />
+		</div>
 		</div>
 	);
 
