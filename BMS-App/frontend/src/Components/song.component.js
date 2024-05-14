@@ -3,46 +3,55 @@
 function Song() {
 	return(
 		<div className="base-component song border-top border-end border-bottom p-4">
-		<h2>Song Name</h2>
-		<div className="d-flex justify-content-start;">
-		<button>x</button>
-		<ul className="list-group">
-		<li className="list-group-item">
-			<p>Key</p>
-			<p>A</p>
-		</li>
-		<li className="list-group-item">
-			<p>Chords</p>
-			<p>Cm A G</p>
-		</li>
-		<li>
-			<p>Lead</p>
-			<p>Person</p>
-		</li>
-		<li>
-			<p>Starting</p>
-			<p>Person</p>
-		</li>
-		<li>
-			<p>Ending</p>
-			<p>Person</p>
-		</li>
-	
-		<li>
-			<p>Position</p>
-			<p>0</p>
-		</li>
-		</ul>
-		<p>Notes</p>
-		<p>my notes go here</p>
+		<div className="d-flex slideouthead">
+			<h2>Song Name</h2>
+			<button>x</button>
+		</div>
+		<div className="d-flex justify-content-start divi">
+		<div className="unordered">
+			<ul className="list-group">
+			<li className="list-group-item d-flex">
+				<p>Key:</p>
+				<p>A</p>
+			</li>
+			<li className="list-group-item d-flex">
+				<p>Chords:</p>
+				<p>Cm A G</p>
+			</li>
+			<li className="list-group-item">
+				<p>Lead</p>
+				<p>Person</p>
+			</li>
+			<li className="list-group-item">
+				<p>Starting</p>
+				<p>Person</p>
+			</li>
+			<li className="list-group-item">
+				<p>Ending</p>
+				<p>Person</p>
+			</li>	
+			<li className="list-group-item">
+				<p>Position</p>
+				<p>0</p>
+			</li>
+			</ul>
+		</div>
+		<div className="notes">
+			<p>Notes</p>
+			<p>my notes go here</p>
+		</div>
 
-		<h5>Transpose</h5>
-		<p>value</p>
-		<p>+1</p>
-		<button>+</button>
-		<button>-</button>
-		<button>Edit</button>
-		<button>Delete</button>
+		<div className="transpose">
+			<h5>Transpose</h5>
+			<p>value</p>
+			<p>+1</p>
+			<button>+</button>
+			<button>-</button>
+		</div>
+		<div className="d-flex dangerzone">
+			<button>Edit</button>
+			<button>Delete</button>
+		</div>
 		</div>
 		<p>I am a single song, put a ring on me</p>
 		</div>
