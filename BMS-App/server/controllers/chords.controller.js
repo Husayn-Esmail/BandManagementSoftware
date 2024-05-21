@@ -12,13 +12,13 @@ exports.create = (req, res) => {
     return;
   }
 
-  // Create a Tutorial
+  // Create a Chord
   const chord = {
     note: req.body.note,
     interval: req.body.interval,
   };
 
-  // Save Tutorial in the database
+  // Save Chord in the database
   Chord.create(chord)
     .then((data) => {
       res.send(data);
