@@ -70,3 +70,7 @@ Using Bootstrap for Frontend Styling
 
 
 ## Current State of Project images
+
+![Add chords](images/addchords.png)
+![Display Chords](images/displaychords.png)
+![Song list](images/songlist.png)
